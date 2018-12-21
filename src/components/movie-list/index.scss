@@ -1,0 +1,28 @@
+@import 'node_modules/sass-bem/bem';
+
+$bem-component-namespace: 'md';
+
+@include c('movie-list') {
+
+  @include e('list') {
+    height: 100%;
+  }
+
+  @include e('tips') {
+    font-size: .875rem /* 14/16 */;
+    text-align: center;
+    padding: 1.5625rem /* 25/16 */;
+    color: #ccc;
+  }
+
+  @include e('tips-text') {
+    vertical-align: middle;
+  }
+
+  @include e('tips-image') {
+    width: 1.25rem /* 20/16 */;
+    height: 1.25rem /* 20/16 */;
+    margin-right: .625rem /* 10/16 */;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,2 @@
+export const BOARD_MOVIE_LIST = 'BOARD_MOVIE_LIST'
+export const BOARD_BANNER = 'BOARD_BANNER'

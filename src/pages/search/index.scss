@@ -1,0 +1,12 @@
+@import 'node_modules/sass-bem/bem';
+
+$bem-component-namespace: 'md';
+
+@include c('search') {
+  height:100vh;
+  padding-bottom: 3.75rem /* 60/16 */;
+  @include e('box') {
+    padding-top: 4rem;
+    width: 100%;
+  }
+}

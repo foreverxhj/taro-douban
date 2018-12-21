@@ -1,0 +1,77 @@
+@import 'node_modules/sass-bem/bem';
+
+$bem-component-namespace: 'md';
+
+@include c('board') {
+
+  @include e('swiper') {
+    height: 15rem /* 240/16 */;
+    margin-top: 2.875rem /* 46/16 */;
+  }
+
+  @include e('slide-image') {
+    height: 100%;
+    width: 100%;
+  }
+
+  @include e('list') {
+    box-sizing: border-box;
+    background-color: #f8f9fb;
+    margin-bottom: 3.75rem /* 60/16 */;
+  }
+
+  @include e('item') {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: .625rem /* 10/16 */;
+    margin: 1.25rem /* 20/16 */ 0;
+    padding: 1.25rem /* 20/16 */;
+    background-color: #fff;
+  }
+
+  @include e('title') {
+    display: flex;
+    margin-bottom: .3125rem /* 5/16 */;
+    width: 100%;
+  }
+
+  @include e('title-text') {
+    flex: 1;
+  }
+
+  @include e('title-image') {
+    height: .625rem /* 10/16 */;
+    width: .625rem /* 10/16 */ ;
+  }
+
+  @include e('content') {
+    height: 9.375rem /* 150/16 */;
+  }
+
+  @include e('inner') {
+    display: flex;
+    flex-direction: row;
+    height: 9.375rem /* 150/16 */;
+    width: 28.125rem /* 450/16 */;
+  }
+
+  @include e('movie') {
+    display: flex;
+    flex-direction: column;
+    width: 5.625rem /* 90/16 */;
+    margin: .3125rem /* 5/16 */;
+  }
+
+  @include e('movie-image') {
+    width: 5.625rem /* 90/16 */;
+    height: 7.8125rem /* 125/16 */;
+  }
+
+  @include e('movie-text') {
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
